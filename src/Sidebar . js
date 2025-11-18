@@ -1,0 +1,21 @@
+import React from 'react';
+
+function Sidebar() {
+  return (
+    <div
+      style={{
+        width: '70px',
+        background: '#222',
+        color: '#fff',
+        height: '100vh',
+        paddingTop: '20px'
+      }}
+    >
+      <div style={{ marginBottom: '20px', textAlign: 'center' }}>📱</div>
+      <div style={{ marginBottom: '20px', textAlign: 'center' }}>💬</div>
+      <div style={{ marginBottom: '20px', textAlign: 'center' }}>⚙️</div>
+    </div>
+  );
+}
+
+export default Sidebar;
