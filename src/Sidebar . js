@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Sidebar() {
+function Sidebar({ onAppClick }) {
   return (
     <div
       style={{
@@ -8,12 +8,13 @@ function Sidebar() {
         background: '#222',
         color: '#fff',
         height: '100vh',
-        paddingTop: '20px'
+        paddingTop: '20px',
+        textAlign: 'center'
       }}
     >
-      <div style={{ marginBottom: '20px', textAlign: 'center' }}>📱</div>
-      <div style={{ marginBottom: '20px', textAlign: 'center' }}>💬</div>
-      <div style={{ marginBottom: '20px', textAlign: 'center' }}>⚙️</div>
+      <div style={{ marginBottom: '20px' }} onClick={onAppClick}>📱</div>
+      <div style={{ marginBottom: '20px' }}>💬</div>
+      <div style={{ marginBottom: '20px' }}>⚙️</div>
     </div>
   );
 }
